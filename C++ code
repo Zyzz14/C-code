@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-const int MAX_SIZE = 100;  // Maximum size of the array
+const int MAX_SIZE = 100;  
 
-int arr[MAX_SIZE];  // Global array declaration
-int currentSize = 0;  // Variable to track current size of array
+int arr[MAX_SIZE];  
+int currentSize = 0;  
 
-// Function to display the current elements in the array
+
 void displayArray() {
     if (currentSize == 0) {
         cout << "Array is empty" << endl;
@@ -19,7 +19,7 @@ void displayArray() {
     cout << endl;
 }
 
-// Function to add an element to the array
+
 void addElement(int element) {
     if (currentSize == MAX_SIZE) {
         cout << "Array is full. Cannot add more elements." << endl;
@@ -29,7 +29,7 @@ void addElement(int element) {
     cout << "Element " << element << " added successfully." << endl;
 }
 
-// Function to update an element in the array at a specified index
+
 void updateElement(int index, int newValue) {
     if (index < 0 || index >= currentSize) {
         cout << "Invalid index. Update operation failed." << endl;
@@ -39,7 +39,7 @@ void updateElement(int index, int newValue) {
     cout << "Element at index " << index << " updated to " << newValue << " successfully." << endl;
 }
 
-// Function to delete an element from the array at a specified index
+
 void deleteElement(int index) {
     if (index < 0 || index >= currentSize) {
         cout << "Invalid index. Delete operation failed." << endl;
